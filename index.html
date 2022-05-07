@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>Hindusthan Auto Parts</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i">
+    <!-- css -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/photoswipe/photoswipe.css">
+    <link rel="stylesheet" href="vendor/photoswipe/default-skin/default-skin.css">
+    <link rel="stylesheet" href="vendor/select2/css/select2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.header-classic-variant-five.css" media="(min-width: 1200px)">
+    <link rel="stylesheet" href="css/style.mobile-header-variant-one.css" media="(max-width: 1199px)">
+    <!-- font - fontawesome -->
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+    
+  </head>
+  <body>
+    <!-- site -->
+    <div class="site">
+      <!-- site__mobile-header -->
+      <header class="site__mobile-header">
+        <div class="mobile-header">
+          <div class="container">
+            <div class="mobile-header__body">
+              <button class="mobile-header__menu-button" type="button">
+                <svg width="18px" height="14px">
+                  <path d="M-0,8L-0,6L18,6L18,8L-0,8ZM-0,-0L18,-0L18,2L-0,2L-0,-0ZM14,14L-0,14L-0,12L14,12L14,14Z"/>
+                </svg>
+              </button>
+              <a class="mobile-header__logo" href="#">
+                <!-- mobile-logo --> 
+                <img src="./images/logo.png" alt="" class="img-fluid">
+                <!-- mobile-logo / end -->
+              </a>
+              <div class="mobile-header__search mobile-search">
+                <form class="mobile-search__body">
+                  <input type="text" class="mobile-search__input" placeholder="Enter keyword or part number"> 
+                  <button type="button" class="mobile-search__vehicle-picker" aria-label="Select Vehicle">
+                    <img src="./images/products/loom.png" alt="" width="20px" height="28px">
+                    <span class="mobile-search__vehicle-picker-label">Looms</span>
+                  </button>
+                  <button type="submit" class="mobile-search__button mobile-search__button--search">
+                    <svg width="20" height="20">
+                      <path d="M19.2,17.8c0,0-0.2,0.5-0.5,0.8c-0.4,0.4-0.9,0.6-0.9,0.6s-0.9,0.7-2.8-1.6c-1.1-1.4-2.2-2.8-3.1-3.9C10.9,14.5,9.5,15,8,15
+                        c-3.9,0-7-3.1-7-7s3.1-7,7-7s7,3.1,7,7c0,1.5-0.5,2.9-1.3,4c1.1,0.8,2.5,2,4,3.1C20,16.8,19.2,17.8,19.2,17.8z M8,3C5.2,3,3,5.2,3,8
+                        c0,2.8,2.2,5,5,5c2.8,0,5-2.2,5-5C13,5.2,10.8,3,8,3z"/>
+                    </svg>
+                  </button>
+                  <button type="button" class="mobile-search__button mobile-search__button--close">
+                    <svg width="20" height="20">
+                      <path d="M16.7,16.7L16.7,16.7c-0.4,0.4-1,0.4-1.4,0L10,11.4l-5.3,5.3c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L8.6,10L3.3,4.7
+                        c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L10,8.6l5.3-5.3c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L11.4,10l5.3,5.3
+                        C17.1,15.7,17.1,16.3,16.7,16.7z"/>
+                    </svg>
+                  </button>
+                  <div class="mobile-search__field"></div>
+                </form>
+              </div>
+              <div class="mobile-header__indicators">
+                <div class="mobile-indicator mobile-indicator--search d-md-none">
+                  <button type="button" class="mobile-indicator__button">
+                    <span class="mobile-indicator__icon">
+                      <svg width="20" height="20">
+                        <path d="M19.2,17.8c0,0-0.2,0.5-0.5,0.8c-0.4,0.4-0.9,0.6-0.9,0.6s-0.9,0.7-2.8-1.6c-1.1-1.4-2.2-2.8-3.1-3.9C10.9,14.5,9.5,15,8,15
+                          c-3.9,0-7-3.1-7-7s3.1-7,7-7s7,3.1,7,7c0,1.5-0.5,2.9-1.3,4c1.1,0.8,2.5,2,4,3.1C20,16.8,19.2,17.8,19.2,17.8z M8,3C5.2,3,3,5.2,3,8
+                          c0,2.8,2.2,5,5,5c2.8,0,5-2.2,5-5C13,5.2,10.8,3,8,3z"/>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="mobile-indicator d-none d-md-block">
+                  <a href="#" class="mobile-indicator__button">
+                    <span class="mobile-indicator__icon">
+                      <svg width="20" height="20">
+                        <path d="M20,20h-2c0-4.4-3.6-8-8-8s-8,3.6-8,8H0c0-4.2,2.6-7.8,6.3-9.3C4.9,9.6,4,7.9,4,6c0-3.3,2.7-6,6-6s6,2.7,6,6
+                          c0,1.9-0.9,3.6-2.3,4.7C17.4,12.2,20,15.8,20,20z M14,6c0-2.2-1.8-4-4-4S6,3.8,6,6s1.8,4,4,4S14,8.2,14,6z"/>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="mobile-indicator d-none d-md-block">
+                  <a href="#" class="mobile-indicator__button">
+                    <span class="mobile-indicator__icon">
+                      <svg width="20" height="20">
+                        <path d="M14,3c2.2,0,4,1.8,4,4c0,4-5.2,10-8,10S2,11,2,7c0-2.2,1.8-4,4-4c1,0,1.9,0.4,2.7,1L10,5.2L11.3,4C12.1,3.4,13,3,14,3 M14,1
+                          c-1.5,0-2.9,0.6-4,1.5C8.9,1.6,7.5,1,6,1C2.7,1,0,3.7,0,7c0,5,6,12,10,12s10-7,10-12C20,3.7,17.3,1,14,1L14,1z"/>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="mobile-indicator">
+                  <a href="#" class="mobile-indicator__button">
+                    <span class="mobile-indicator__icon">
+                      <svg width="20" height="20">
+                        <circle cx="7" cy="17" r="2"/>
+                        <circle cx="15" cy="17" r="2"/>
+                        <path d="M20,4.4V5l-1.8,6.3c-0.1,0.4-0.5,0.7-1,0.7H6.7c-0.4,0-0.8-0.3-1-0.7L3.3,3.9C3.1,3.3,2.6,3,2.1,3H0.4C0.2,3,0,2.8,0,2.6
+                          V1.4C0,1.2,0.2,1,0.4,1h2.5c1,0,1.8,0.6,2.1,1.6L5.1,3l2.3,6.8c0,0.1,0.2,0.2,0.3,0.2h8.6c0.1,0,0.3-0.1,0.3-0.2l1.3-4.4
+                          C17.9,5.2,17.7,5,17.5,5H9.4C9.2,5,9,4.8,9,4.6V3.4C9,3.2,9.2,3,9.4,3h9.2C19.4,3,20,3.6,20,4.4z"/>
+                      </svg>
+                      <span class="mobile-indicator__counter">3</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- site__mobile-header / end --><!-- site__header -->
+      <header class="site__header">
+        <div class="header">
+          <div class="header__megamenu-area megamenu-area"></div>
+          <div class="header__topbar-classic-bg"></div>
+          <div class="header__topbar-classic">
+            <div class="topbar topbar--classic">
+              <div class="topbar__item-text"><a class="topbar__link" href="#">About Us</a></div>
+              <div class="topbar__item-text"><a class="topbar__link" href="#">Contacts</a></div>
+              <div class="topbar__item-text"><a class="topbar__link" href="#">Store Location</a></div>
+             
+              <div class="topbar__item-spring"></div>
+             
+              <div class="topbar__item-button"><a href="#" class="topbar__button"><span class="topbar__button-label">Track Order</span></a></div>
+              <div class="topbar__item-button"><a href="#" class="topbar__button"><span class="topbar__button-label">Blog</span></a></div>
+              
+             
+            </div>
+          </div>
+          <div class="header__navbar">
+            <div class="header__navbar-departments">
+              <div class="departments">
+                <button class="departments__button" type="button">
+                  <span class="departments__button-icon">
+                    <svg width="16px" height="12px">
+                      <path d="M0,7L0,5L16,5L16,7L0,7ZM0,0L16,0L16,2L0,2L0,0ZM12,12L0,12L0,10L12,10L12,12Z"/>
+                    </svg>
+                  </span>
+                  <span class="departments__button-title">Shop By Category</span> 
+                  <span class="departments__button-arrow">
+                    <svg width="9px" height="6px">
+                      <path d="M0.2,0.4c0.4-0.4,1-0.5,1.4-0.1l2.9,3l2.9-3c0.4-0.4,1.1-0.4,1.4,0.1c0.3,0.4,0.3,0.9-0.1,1.3L4.5,6L0.3,1.6C-0.1,1.3-0.1,0.7,0.2,0.4z"/>
+                    </svg>
+                  </span>
+                </button>
+                <div class="departments__menu">
+                  <div class="departments__arrow"></div>
+                  <div class="departments__body">
+                    <ul class="departments__list">
+                      <li class="departments__list-padding" role="presentation"></li>
+                      <li class="departments__item departments__item--submenu--megamenu departments__item--has-submenu">
+                        <a href="#" class="departments__item-link">
+                          Crank Type Rapier Loom  
+                          <span class="departments__item-arrow">
+                            <svg width="7" height="11">
+                              <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
+                                C-0.1,9.8-0.1,10.4,0.3,10.7z"/>
+                            </svg>
+                          </span>
+                        </a>
+                        <div class="departments__item-menu">
+                          <div class="megamenu departments__megamenu departments__megamenu--size--xl">
+                            <div class="megamenu__image"><img src="images/departments/departments-2.jpg" alt=""></div>
+                            <div class="row">
+                              <div class="col-1of5">
+                                <ul class="megamenu__links megamenu-links megamenu-links--root">
+                                  <li class="megamenu-links__item megamenu-links__item--has-submenu">
+                                    <a class="megamenu-links__item-link" href="#">Loom Spares</a>
+                                    <ul class="megamenu-links">
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Textile Machinery Spares</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Weaving Loom</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Rapier Loom Parts</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Power Loom Spare Parts</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Sulzer Loom Spare Parts</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Jacquard Loom Spare Parts</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Weaving Machine Parts</a></li>
+                                    </ul>
+                                  </li>
+                                  <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Weaving Loom Parts</a></li>
+                                  <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Circular Loom Spare Parts</a></li>
+                                  <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Needle Loom Spare Parts</a></li>
+                                  <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Heald Frame Accessories</a></li>
+                                  <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Dornier Loom Parts</a></li>
+                                </ul>
+                              </div>
+                              <div class="col-1of5">
+                                <ul class="megamenu__links megamenu-links megamenu-links--root">
+                                  <li class="megamenu-links__item megamenu-links__item--has-submenu">
+                                    <a class="megamenu-links__item-link" href="#">Sulzer loom spare </a>
+                                    <ul class="megamenu-links">
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">
+                                        Textile Machinery Spares</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Tail Lights</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Weaving Loom</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Rapier Loom Parts</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Power Loom Spare Parts</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Sulzer Loom Spare Parts</a></li>
+                                    </ul>
+                                  </li>
+                                  <li class="megamenu-links__item megamenu-links__item--has-submenu">
+                                    <a class="megamenu-links__item-link" href="#">Rapier loom</a>
+                                    <ul class="megamenu-links">
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Jacquard Loom Spare Parts</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Weaving Machine Parts</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Weaving Loom Parts</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Circular Loom Spare Parts</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Needle Loom Spare Parts</a></li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="col-1of5">
+                                <ul class="megamenu__links megamenu-links megamenu-links--root">
+                                  <li class="megamenu-links__item megamenu-links__item--has-submenu">
+                                    <a class="megamenu-links__item-link" href="#">Weaving loom</a>
+                                    <ul class="megamenu-links">
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Floor Mats</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Gauges</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Consoles & Organizers</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Mobile Electronics</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Steering Wheels</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Cargo Accessories</a></li>
+                                    </ul>
+                                  </li>
+                                  <li class="megamenu-links__item megamenu-links__item--has-submenu">
+                                    <a class="megamenu-links__item-link" href="#">Circular loom spare </a>
+                                    <ul class="megamenu-links">
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Heald Frame Accessories</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Dornier Loom Parts</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Heald Frame</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Dornier Loom Parts</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Cranks & Pistons</a></li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="col-1of5">
+                                <ul class="megamenu__links megamenu-links megamenu-links--root">
+                                  <li class="megamenu-links__item megamenu-links__item--has-submenu">
+                                    <a class="megamenu-links__item-link" href="#">Needle loom spare</a>
+                                    <ul class="megamenu-links">
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Ring Temple Stud for Rapier Looms</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Jacquard M5 Module</a></li>
+                                      <li class="megamenu-links__item"><a class="megamenu-links__item-link" href="#">Heald & Sulzer Frames</a></li>
+                                    
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    
+                      <li class="departments__item"><a href="#" class="departments__item-link">Weaving Loom</a></li>
+                      <li class="departments__item"><a href="#" class="departments__item-link">Rapier Loom</a></li>
+                      <li class="departments__item"><a href="#" class="departments__item-link">Power Loom Spare</a></li>
+                      <li class="departments__item"><a href="#" class="departments__item-link">Sulzer Loom Spare</a></li>
+                      <li class="departments__item"><a href="#" class="departments__item-link">Jacquard Loom Spare</a></li>
+                      <li class="departments__item"><a href="#" class="departments__item-link">Weaving Machine </a></li>
+                      <li class="departments__item"><a href="#" class="departments__item-link">Circular Loom Spare</a></li>
+                      <li class="departments__item"><a href="#" class="departments__item-link">Needle Loom Spare</a></li>
+                      <li class="departments__item"><a href="#" class="departments__item-link">Heald Frame Accessories</a></li>
+                      <li class="departments__item"><a href="#" class="departments__item-link">Dornier Loom </a></li>
+                      <li class="departments__item"><a href="#" class="departments__item-link">Heald Frame</a></li>
+                      <li class="departments__item"><a href="#" class="departments__item-link">Weaving Loom</a></li>
+
+                      <li class="departments__list-padding" role="presentation"></li>
+                    </ul>
+                    <div class="departments__menu-container"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__navbar-menu">
+              <div class="main-menu">
+                <ul class="main-menu__list">
+                  <li class="main-menu__item"><a href="#" class="main-menu__link" target="_blank"> Air Jet Looms</a></li>
+                  <li class="main-menu__item"><a href="#" class="main-menu__link" target="_blank"> Power Looms</a></li>
+                  <li class="main-menu__item"><a href="#" class="main-menu__link" target="_blank">  Textile Machinery Spare </a></li>
+                  <li class="main-menu__item"><a href="#" class="main-menu__link" target="_blank">  Rapier Loom </a></li>
+                
+                  <li class="main-menu__item main-menu__item--submenu--menu main-menu__item--has-submenu">
+                    <a href="#" class="main-menu__link">
+                      Account 
+                      <svg width="7px" height="5px">
+                        <path d="M0.280,0.282 C0.645,-0.084 1.238,-0.077 1.596,0.297 L3.504,2.310 L5.413,0.297 C5.770,-0.077 6.363,-0.084 6.728,0.282 C7.080,0.634 7.088,1.203 6.746,1.565 L3.504,5.007 L0.262,1.565 C-0.080,1.203 -0.072,0.634 0.280,0.282 Z"/>
+                      </svg>
+                    </a>
+                    <div class="main-menu__submenu">
+                      <ul class="menu">
+                        <li class="menu__item"><a href="account-login.html" class="menu__link">Login & Register</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Dashboard</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Garage</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Edit Profile</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Order History</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Order Details</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Address Book</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Edit Address</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Change Password</a></li>
+                      </ul>
+                    </div>
+                  </li>
+               
+                  <li class="main-menu__item"><a href="#" class="main-menu__link" target="_blank">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="header__navbar-phone phone">
+              <a href="#" class="phone__body">
+                <div class="phone__title">Call Us:</div>
+                <div class="phone__number">123 456-7890</div>
+              </a>
+            </div>
+          </div>
+          <div class="header__logo">
+            <a href="#" class="logo">
+              <div class="logo__slogan">Auto parts for Cars, trucks and motorcycles</div>
+              <div class="logo__image">
+                <!-- logo --> 
+              <img src="./images/logo.png" alt="">
+                <!-- logo / end -->
+              </div>
+            </a>
+          </div>
+          <div class="header__search">
+            <div class="search">
+              <form action="#" class="search__body">
+                <div class="search__shadow"></div>
+                <input class="search__input" type="text" placeholder="Enter Keyword or Part Number"> 
+                <button class="search__button search__button--start" type="button">
+                  <span class="search__button-icon">
+                    <img src="./images/products/loom.png" alt="" width="20px" height="28px"> 
+                  </span>
+                  <span class="search__button-title">Select Loom</span>
+                </button>
+                <button class="search__button search__button--end" type="submit">
+                  <span class="search__button-icon">
+                    <svg width="20" height="20">
+                      <path d="M19.2,17.8c0,0-0.2,0.5-0.5,0.8c-0.4,0.4-0.9,0.6-0.9,0.6s-0.9,0.7-2.8-1.6c-1.1-1.4-2.2-2.8-3.1-3.9C10.9,14.5,9.5,15,8,15
+                        c-3.9,0-7-3.1-7-7s3.1-7,7-7s7,3.1,7,7c0,1.5-0.5,2.9-1.3,4c1.1,0.8,2.5,2,4,3.1C20,16.8,19.2,17.8,19.2,17.8z M8,3C5.2,3,3,5.2,3,8
+                        c0,2.8,2.2,5,5,5c2.8,0,5-2.2,5-5C13,5.2,10.8,3,8,3z"/>
+                    </svg>
+                  </span>
+                </button>
+                <div class="search__box"></div>
+                <div class="search__decor">
+                  <div class="search__decor-start"></div>
+                  <div class="search__decor-end"></div>
+                </div>
+                <div class="search__dropdown search__dropdown--suggestions suggestions">
+                
+                  <div class="suggestions__group">
+                    <div class="suggestions__group-title">Categories</div>
+                    <div class="suggestions__group-content"><a class="suggestions__item suggestions__category" href="#">Water Jet Loom</a> <a class="suggestions__item suggestions__category" href="#"> Rapier Loom</a>  <a class="suggestions__item suggestions__category" href="#"> Textile Machinery Spare Parts</a>   <a class="suggestions__item suggestions__category" href="#">Power Loom</a>  <a class="suggestions__item suggestions__category" href="#"> Embroidery Machine Spare Parts</a>   <a class="suggestions__item suggestions__category" href="#"> Looms Spare Parts</a>  <a class="suggestions__item suggestions__category" href="#">Air Jet Looms</a>  </div>
+                  </div>
+                </div>
+                <div class="search__dropdown search__dropdown--vehicle-picker vehicle-picker">
+                  <div class="search__dropdown-arrow"></div>
+                  <div class="vehicle-picker__panel vehicle-picker__panel--list vehicle-picker__panel--active" data-panel="list">
+                    <div class="vehicle-picker__panel-body">
+                      <div class="vehicle-picker__text">Select a loom to find exact fit parts</div>
+                      <div class="vehicles-list">
+                        <div class="vehicles-list__body">
+                          <label class="vehicles-list__item">
+                            <span class="vehicles-list__item-radio input-radio"><span class="input-radio__body"><input class="input-radio__input" name="header-vehicle" type="radio"> <span class="input-radio__circle"></span> </span></span><span class="vehicles-list__item-info"><span class="vehicles-list__item-name">Jacquard </span> <span class="vehicles-list__item-details">Jacquard Hook Module</span> </span>
+                            <button type="button" class="vehicles-list__item-remove">
+                              <svg width="16" height="16">
+                                <path d="M2,4V2h3V1h6v1h3v2H2z M13,13c0,1.1-0.9,2-2,2H5c-1.1,0-2-0.9-2-2V5h10V13z"/>
+                              </svg>
+                            </button>
+                          </label>
+                          <label class="vehicles-list__item">
+                            <span class="vehicles-list__item-radio input-radio"><span class="input-radio__body"><input class="input-radio__input" name="header-vehicle" type="radio"> <span class="input-radio__circle"></span> </span></span><span class="vehicles-list__item-info"><span class="vehicles-list__item-name">Shuttle Loom</span> <span class="vehicles-list__item-details">HAAG Picker P101-P103-P104-P62-P32-s5-s6-ruti-draper</span> </span>
+                            <button type="button" class="vehicles-list__item-remove">
+                              <svg width="16" height="16">
+                                <path d="M2,4V2h3V1h6v1h3v2H2z M13,13c0,1.1-0.9,2-2,2H5c-1.1,0-2-0.9-2-2V5h10V13z"/>
+                              </svg>
+                            </button>
+                          </label>
+                        </div>
+                      </div>
+                    
+                    </div>
+                  </div>
+                
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="header__indicators">
+            
+            <div class="indicator indicator--trigger--click">
+              <a href="#" class="indicator__button">
+                <span class="indicator__icon">
+                  <svg width="32" height="32">
+                    <path d="M16,18C9.4,18,4,23.4,4,30H2c0-6.2,4-11.5,9.6-13.3C9.4,15.3,8,12.8,8,10c0-4.4,3.6-8,8-8s8,3.6,8,8c0,2.8-1.5,5.3-3.6,6.7
+                      C26,18.5,30,23.8,30,30h-2C28,23.4,22.6,18,16,18z M22,10c0-3.3-2.7-6-6-6s-6,2.7-6,6s2.7,6,6,6S22,13.3,22,10z"/>
+                  </svg>
+                </span>
+                <span class="indicator__title">Hello, Log In</span> <span class="indicator__value">My Account</span>
+              </a>
+              <div class="indicator__content">
+                <div class="account-menu">
+                  <form class="account-menu__form">
+                    <div class="account-menu__form-title">Log In to Your Account</div>
+                    <div class="form-group"><label for="header-signin-email" class="sr-only">Email address</label> <input id="header-signin-email" type="email" class="form-control form-control-sm" placeholder="Email address"></div>
+                    <div class="form-group">
+                      <label for="header-signin-password" class="sr-only">Password</label>
+                      <div class="account-menu__form-forgot"><input id="header-signin-password" type="password" class="form-control form-control-sm" placeholder="Password"> <a href="#" class="account-menu__form-forgot-link">Forgot?</a></div>
+                    </div>
+                    <div class="form-group account-menu__form-button"><button type="submit" class="btn btn-primary btn-sm">Login</button></div>
+                    <div class="account-menu__form-link"><a href="#">Create An Account</a></div>
+                  </form>
+                  <div class="account-menu__divider"></div>
+                  <a href="#" class="account-menu__user">
+                    <div class="account-menu__user-avatar"><img src="images/avatars/avatar-4.jpg" alt=""></div>
+                    <div class="account-menu__user-info">
+                      <div class="account-menu__user-name">Panaliswamy</div>
+                      <div class="account-menu__user-email">panali@gmail.com</div>
+                    </div>
+                  </a>
+                  <div class="account-menu__divider"></div>
+                  <ul class="account-menu__links">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Garage</a></li>
+                    <li><a href="#">Edit Profile</a></li>
+                    <li><a href="#">Order History</a></li>
+                    <li><a href="#">Addresses</a></li>
+                  </ul>
+                  <div class="account-menu__divider"></div>
+                  <ul class="account-menu__links">
+                    <li><a href="#">Logout</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="indicator indicator--trigger--click">
+              <a href="#" class="indicator__button">
+                <span class="indicator__icon">
+                  <svg width="32" height="32">
+                    <circle cx="10.5" cy="27.5" r="2.5"/>
+                    <circle cx="23.5" cy="27.5" r="2.5"/>
+                    <path d="M26.4,21H11.2C10,21,9,20.2,8.8,19.1L5.4,4.8C5.3,4.3,4.9,4,4.4,4H1C0.4,4,0,3.6,0,3s0.4-1,1-1h3.4C5.8,2,7,3,7.3,4.3
+                      l3.4,14.3c0.1,0.2,0.3,0.4,0.5,0.4h15.2c0.2,0,0.4-0.1,0.5-0.4l3.1-10c0.1-0.2,0-0.4-0.1-0.4C29.8,8.1,29.7,8,29.5,8H14
+                      c-0.6,0-1-0.4-1-1s0.4-1,1-1h15.5c0.8,0,1.5,0.4,2,1c0.5,0.6,0.6,1.5,0.4,2.2l-3.1,10C28.5,20.3,27.5,21,26.4,21z"/>
+                  </svg>
+                  <span class="indicator__counter">3</span> 
+                </span>
+                <span class="indicator__title">Shopping Cart</span> <span class="indicator__value">₹ 250.00</span>
+              </a>
+              <div class="indicator__content">
+                <div class="dropcart">
+                  <ul class="dropcart__list">
+                    <li class="dropcart__item">
+                      <div class="dropcart__item-image image image--type--product"><a class="image__body" href="#"><img class="image__tag" src="images/products/product-4-70x70.jpg" alt=""></a></div>
+                      <div class="dropcart__item-info">
+                        <div class="dropcart__item-name"><a href="#">Product Name V1</a></div>
+                        <ul class="dropcart__item-features">
+                          <li>Color: Yellow</li>
+                          <li>Material: Aluminium</li>
+                        </ul>
+                        <div class="dropcart__item-meta">
+                          <div class="dropcart__item-quantity">2</div>
+                          <div class="dropcart__item-price">₹699.00</div>
+                        </div>
+                      </div>
+                      <button type="button" class="dropcart__item-remove">
+                        <svg width="10" height="10">
+                          <path d="M8.8,8.8L8.8,8.8c-0.4,0.4-1,0.4-1.4,0L5,6.4L2.6,8.8c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L3.6,5L1.2,2.6
+                            c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L5,3.6l2.4-2.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L6.4,5l2.4,2.4
+                            C9.2,7.8,9.2,8.4,8.8,8.8z"/>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="dropcart__divider" role="presentation"></li>
+                    <li class="dropcart__item">
+                      <div class="dropcart__item-image image image--type--product"><a class="image__body" href="#"><img class="image__tag" src="images/products/product-2-70x70.jpg" alt=""></a></div>
+                      <div class="dropcart__item-info">
+                        <div class="dropcart__item-name"><a href="#">Product Name V2</a></div>
+                        <div class="dropcart__item-meta">
+                          <div class="dropcart__item-quantity">1</div>
+                          <div class="dropcart__item-price">₹849.00</div>
+                        </div>
+                      </div>
+                      <button type="button" class="dropcart__item-remove">
+                        <svg width="10" height="10">
+                          <path d="M8.8,8.8L8.8,8.8c-0.4,0.4-1,0.4-1.4,0L5,6.4L2.6,8.8c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L3.6,5L1.2,2.6
+                            c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L5,3.6l2.4-2.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L6.4,5l2.4,2.4
+                            C9.2,7.8,9.2,8.4,8.8,8.8z"/>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="dropcart__divider" role="presentation"></li>
+                    <li class="dropcart__item">
+                      <div class="dropcart__item-image image image--type--product"><a class="image__body" href="#"><img class="image__tag" src="images/products/product-5-70x70.jpg" alt=""></a></div>
+                      <div class="dropcart__item-info">
+                        <div class="dropcart__item-name"><a href="#">Product Name V3</a></div>
+                        <ul class="dropcart__item-features">
+                          <li>Color: Single</li>
+                        </ul>
+                        <div class="dropcart__item-meta">
+                          <div class="dropcart__item-quantity">3</div>
+                          <div class="dropcart__item-price">₹1210.00</div>
+                        </div>
+                      </div>
+                      <button type="button" class="dropcart__item-remove">
+                        <svg width="10" height="10">
+                          <path d="M8.8,8.8L8.8,8.8c-0.4,0.4-1,0.4-1.4,0L5,6.4L2.6,8.8c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L3.6,5L1.2,2.6
+                            c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L5,3.6l2.4-2.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L6.4,5l2.4,2.4
+                            C9.2,7.8,9.2,8.4,8.8,8.8z"/>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="dropcart__divider" role="presentation"></li>
+                  </ul>
+                  <div class="dropcart__totals">
+                    <table>
+                      <tr>
+                        <th>Subtotal</th>
+                        <td>₹5877.00</td>
+                      </tr>
+                      <tr>
+                        <th>Shipping</th>
+                        <td>₹25.00</td>
+                      </tr>
+                      <tr>
+                        <th>Tax</th>
+                        <td>₹0.00</td>
+                      </tr>
+                      <tr>
+                        <th>Total</th>
+                        <td>₹5902.00</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="dropcart__actions"><a href="#" class="btn btn-secondary">View Cart</a> <a href="#" class="btn btn-primary">Checkout</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- site__header / end --><!-- site__body -->
+      <div class="site__body">
+        <div class="block-space block-space--layout--divider-lg"></div>
+        <div class="container text-center py-5 my-5 text-muted">Work station</div>
+        <div class="block-space block-space--layout--divider-lg"></div>
+      </div>
+      <!-- site__body / end --><!-- site__footer -->
+      <footer class="site__footer">
+        <div class="site-footer">
+          <div class="decor site-footer__decor decor--type--bottom">
+            <div class="decor__body">
+              <div class="decor__start"></div>
+              <div class="decor__end"></div>
+              <div class="decor__center"></div>
+            </div>
+          </div>
+          <div class="site-footer__widgets">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-xl-4">
+                  <div class="site-footer__widget footer-contacts">
+                    <h5 class="footer-contacts__title">Contact Us</h5>
+                    <div class="footer-contacts__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in feugiat lorem.</div>
+                    <address class="footer-contacts__contacts">
+                      <dl>
+                        <dt>Phone Number</dt>
+                        <dd>+91 123 456-78-90</dd>
+                      </dl>
+                      <dl>
+                        <dt>Email Address</dt>
+                        <dd>senthil@gmail.com</dd>
+                      </dl>
+                      <dl>
+                        <dt>Our Location</dt>
+                        <dd>Address one, Address Two</dd>
+                      </dl>
+                      <dl>
+                        <dt>Working Days</dt>
+                        <dd>Mon-Sat</dd>
+                      </dl>
+                    </address>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 col-xl-2">
+                  <div class="site-footer__widget footer-links">
+                    <h5 class="footer-links__title">Information</h5>
+                    <ul class="footer-links__list">
+                      <li class="footer-links__item"><a href="#" class="footer-links__link">About Us</a></li>
+                      <li class="footer-links__item"><a href="#" class="footer-links__link">Delivery Information</a></li>
+                      <li class="footer-links__item"><a href="#" class="footer-links__link">Privacy Policy</a></li>
+                      <li class="footer-links__item"><a href="#" class="footer-links__link">Brands</a></li>
+                      <li class="footer-links__item"><a href="#" class="footer-links__link">Contact Us</a></li>
+                      <li class="footer-links__item"><a href="#" class="footer-links__link">Returns</a></li>
+                     
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 col-xl-2">
+                  <div class="site-footer__widget footer-links">
+                    <h5 class="footer-links__title">Quick Links</h5>
+                    <ul class="footer-links__list">
+                      <li class="footer-links__item"><a href="#" class="footer-links__link">Cam Type Rapier Loom </a></li>
+                      <li class="footer-links__item"><a href="#" class="footer-links__link">Crank Type Rapier Loom  </a></li>
+                      <li class="footer-links__item"><a href="#" class="footer-links__link">Shuttle Loom </a></li>
+                      <li class="footer-links__item"><a href="#" class="footer-links__link">Water Jet Loom   </a></li>
+                      <li class="footer-links__item"><a href="#" class="footer-links__link">Tuck in device </a></li>
+                      <li class="footer-links__item"><a href="#" class="footer-links__link">Electronic Jacquard.  </a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                  <div class="site-footer__widget footer-newsletter">
+                    <h5 class="footer-newsletter__title">About Us</h5>
+                    <div class="footer-newsletter__text">Hindusthan auto parts is a leading provider of cutting-edge machinery & equipment Supplier for the textile industry in salem. Benchmarking new standards for efficient textile production, we provide a wide range of textile machines etc.</div>
+                    
+                    <div class="footer-newsletter__text footer-newsletter__text--social">Follow us on social networks</div>
+                    <div class="footer-newsletter__social-links social-links">
+                      <ul class="social-links__list">
+                        <li class="social-links__item social-links__item--facebook"><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="social-links__item social-links__item--twitter"><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li class="social-links__item social-links__item--youtube"><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        <li class="social-links__item social-links__item--instagram"><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                      
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="site-footer__bottom">
+            <div class="container">
+              <div class="site-footer__bottom-row">
+                <div class="site-footer__copyright">
+                  <!-- copyright --> © 2022 Hindusthan auto parts. All Rights Reserved.<!-- copyright / end -->
+                </div>
+                <div class="site-footer__payments"><img src="images/payments.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- site__footer / end -->
+    </div>
+    <!-- site / end --><!-- mobile-menu -->
+    <div class="mobile-menu">
+      <div class="mobile-menu__backdrop"></div>
+      <div class="mobile-menu__body">
+        <button class="mobile-menu__close" type="button">
+          <svg width="12" height="12">
+            <path d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6
+              c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L6,4.6l3.4-3.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L7.4,6l3.4,3.4
+              C11.2,9.8,11.2,10.4,10.8,10.8z"/>
+          </svg>
+        </button>
+        <div class="mobile-menu__panel">
+          <div class="mobile-menu__panel-header">
+            <div class="mobile-menu__panel-title">Menu</div>
+          </div>
+          <div class="mobile-menu__panel-body">
+            <div class="mobile-menu__settings-list">
+            
+            </div>
+            <div class="mobile-menu__divider"></div>
+          
+            <div class="mobile-menu__divider"></div>
+            <ul class="mobile-menu__links">
+              <li data-mobile-menu-item>
+                <a href="#" class="" data-mobile-menu-trigger>
+                  Air Jet Looms
+                  <svg width="7" height="11">
+                    <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
+                      C-0.1,9.8-0.1,10.4,0.3,10.7z"/>
+                  </svg>
+                </a>
+                <div class="mobile-menu__links-panel" data-mobile-menu-panel>
+                  <div class="mobile-menu__panel mobile-menu__panel--hidden">
+                    <div class="mobile-menu__panel-header">
+                      <button class="mobile-menu__panel-back" type="button">
+                        <svg width="7" height="11">
+                          <path d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
+                        </svg>
+                      </button>
+                      <div class="mobile-menu__panel-title">Home</div>
+                    </div>
+                    <div class="mobile-menu__panel-body">
+                      <ul class="mobile-menu__links">
+                        <li data-mobile-menu-item><a href="#" class="" data-mobile-menu-trigger>Home One</a></li>
+                        <li data-mobile-menu-item><a href="#" class="" data-mobile-menu-trigger>Home Two</a></li>
+                       
+                      
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li data-mobile-menu-item>
+                <a href="#" class="" data-mobile-menu-trigger>
+                  Looms Spare Parts
+                  <svg width="7" height="11">
+                    <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
+                      C-0.1,9.8-0.1,10.4,0.3,10.7z"/>
+                  </svg>
+                </a>
+                <div class="mobile-menu__links-panel" data-mobile-menu-panel>
+                  <div class="mobile-menu__panel mobile-menu__panel--hidden">
+                    <div class="mobile-menu__panel-header">
+                      <button class="mobile-menu__panel-back" type="button">
+                        <svg width="7" height="11">
+                          <path d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
+                        </svg>
+                      </button>
+                      <div class="mobile-menu__panel-title">Home</div>
+                    </div>
+                    <div class="mobile-menu__panel-body">
+                      <ul class="mobile-menu__links">
+                        <li data-mobile-menu-item><a href="#" class="" data-mobile-menu-trigger>Home One</a></li>
+                        <li data-mobile-menu-item><a href="#" class="" data-mobile-menu-trigger>Home Two</a></li>
+                       
+                      
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li data-mobile-menu-item>
+                <a href="#" class="" data-mobile-menu-trigger>
+                  Water Jet Loom
+                  <svg width="7" height="11">
+                    <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
+                      C-0.1,9.8-0.1,10.4,0.3,10.7z"/>
+                  </svg>
+                </a>
+                <div class="mobile-menu__links-panel" data-mobile-menu-panel>
+                  <div class="mobile-menu__panel mobile-menu__panel--hidden">
+                    <div class="mobile-menu__panel-header">
+                      <button class="mobile-menu__panel-back" type="button">
+                        <svg width="7" height="11">
+                          <path d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
+                        </svg>
+                      </button>
+                      <div class="mobile-menu__panel-title">Home</div>
+                    </div>
+                    <div class="mobile-menu__panel-body">
+                      <ul class="mobile-menu__links">
+                        <li data-mobile-menu-item><a href="#" class="" data-mobile-menu-trigger>Home One</a></li>
+                        <li data-mobile-menu-item><a href="#" class="" data-mobile-menu-trigger>Home Two</a></li>
+                       
+                      
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li data-mobile-menu-item>
+                <a href="#" class="" data-mobile-menu-trigger>
+                  Rapier Loom
+                  <svg width="7" height="11">
+                    <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
+                      C-0.1,9.8-0.1,10.4,0.3,10.7z"/>
+                  </svg>
+                </a>
+                <div class="mobile-menu__links-panel" data-mobile-menu-panel>
+                  <div class="mobile-menu__panel mobile-menu__panel--hidden">
+                    <div class="mobile-menu__panel-header">
+                      <button class="mobile-menu__panel-back" type="button">
+                        <svg width="7" height="11">
+                          <path d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
+                        </svg>
+                      </button>
+                      <div class="mobile-menu__panel-title">Home</div>
+                    </div>
+                    <div class="mobile-menu__panel-body">
+                      <ul class="mobile-menu__links">
+                        <li data-mobile-menu-item><a href="#" class="" data-mobile-menu-trigger>Home One</a></li>
+                        <li data-mobile-menu-item><a href="#" class="" data-mobile-menu-trigger>Home Two</a></li>
+                       
+                      
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li data-mobile-menu-item>
+                <a href="#" class="" data-mobile-menu-trigger>
+                  Textile Machinery Spare Parts
+                  <svg width="7" height="11">
+                    <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
+                      C-0.1,9.8-0.1,10.4,0.3,10.7z"/>
+                  </svg>
+                </a>
+                <div class="mobile-menu__links-panel" data-mobile-menu-panel>
+                  <div class="mobile-menu__panel mobile-menu__panel--hidden">
+                    <div class="mobile-menu__panel-header">
+                      <button class="mobile-menu__panel-back" type="button">
+                        <svg width="7" height="11">
+                          <path d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
+                        </svg>
+                      </button>
+                      <div class="mobile-menu__panel-title">Home</div>
+                    </div>
+                    <div class="mobile-menu__panel-body">
+                      <ul class="mobile-menu__links">
+                        <li data-mobile-menu-item><a href="#" class="" data-mobile-menu-trigger>Home One</a></li>
+                        <li data-mobile-menu-item><a href="#" class="" data-mobile-menu-trigger>Home Two</a></li>
+                       
+                      
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li data-mobile-menu-item>
+                <a href="#" class="" data-mobile-menu-trigger>
+                  Power Looms
+                  <svg width="7" height="11">
+                    <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
+                      C-0.1,9.8-0.1,10.4,0.3,10.7z"/>
+                  </svg>
+                </a>
+                <div class="mobile-menu__links-panel" data-mobile-menu-panel>
+                  <div class="mobile-menu__panel mobile-menu__panel--hidden">
+                    <div class="mobile-menu__panel-header">
+                      <button class="mobile-menu__panel-back" type="button">
+                        <svg width="7" height="11">
+                          <path d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
+                        </svg>
+                      </button>
+                      <div class="mobile-menu__panel-title">Home</div>
+                    </div>
+                    <div class="mobile-menu__panel-body">
+                      <ul class="mobile-menu__links">
+                        <li data-mobile-menu-item><a href="#" class="" data-mobile-menu-trigger>Home One</a></li>
+                        <li data-mobile-menu-item><a href="#" class="" data-mobile-menu-trigger>Home Two</a></li>
+                       
+                      
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              
+              
+              
+              
+           
+     
+            </ul>
+            <div class="mobile-menu__spring"></div>
+            <div class="mobile-menu__divider"></div>
+            <a class="mobile-menu__contacts" href="#">
+              <div class="mobile-menu__contacts-subtitle">Free call 24/7</div>
+              <div class="mobile-menu__contacts-title">123 456-789</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mobile-menu / end --><!-- quickview-modal -->
+    <div id="quickview-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"></div>
+    <!-- quickview-modal / end --><!-- add-vehicle-modal -->
+    <div id="add-vehicle-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="vehicle-picker-modal modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" class="vehicle-picker-modal__close">
+            <svg width="12" height="12">
+              <path d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6
+                c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L6,4.6l3.4-3.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L7.4,6l3.4,3.4
+                C11.2,9.8,11.2,10.4,10.8,10.8z"/>
+            </svg>
+          </button>
+      
+        </div>
+      </div>
+    </div>
+    <!-- add-vehicle-modal / end --><!-- vehicle-picker-modal -->
+    <div id="vehicle-picker-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="vehicle-picker-modal modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" class="vehicle-picker-modal__close">
+            <svg width="12" height="12">
+              <path d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6
+                c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L6,4.6l3.4-3.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L7.4,6l3.4,3.4
+                C11.2,9.8,11.2,10.4,10.8,10.8z"/>
+            </svg>
+          </button>
+          <div class="vehicle-picker-modal__panel vehicle-picker-modal__panel--active" data-panel="list">
+            <div class="vehicle-picker-modal__title card-title">Select Loom</div>
+            <div class="vehicle-picker-modal__text">Select a loom to find exact fit parts</div>
+            <div class="vehicles-list">
+              <div class="vehicles-list__body">
+                <label class="vehicles-list__item">
+                  <span class="vehicles-list__item-radio input-radio"><span class="input-radio__body"><input class="input-radio__input" name="header-vehicle" type="radio"> <span class="input-radio__circle"></span> </span></span><span class="vehicles-list__item-info"><span class="vehicles-list__item-name">Jacquard </span> <span class="vehicles-list__item-details">Jacquard Hook Module</span> </span>
+                  <button type="button" class="vehicles-list__item-remove">
+                    <svg width="16" height="16">
+                      <path d="M2,4V2h3V1h6v1h3v2H2z M13,13c0,1.1-0.9,2-2,2H5c-1.1,0-2-0.9-2-2V5h10V13z"/>
+                    </svg>
+                  </button>
+                </label>
+                <label class="vehicles-list__item">
+                  <span class="vehicles-list__item-radio input-radio"><span class="input-radio__body"><input class="input-radio__input" name="header-vehicle" type="radio"> <span class="input-radio__circle"></span> </span></span><span class="vehicles-list__item-info"><span class="vehicles-list__item-name">Shuttle Loom</span> <span class="vehicles-list__item-details">HAAG Picker P101-P103-P104-P62-P32-s5-s6-ruti-draper</span> </span>
+                  <button type="button" class="vehicles-list__item-remove">
+                    <svg width="16" height="16">
+                      <path d="M2,4V2h3V1h6v1h3v2H2z M13,13c0,1.1-0.9,2-2,2H5c-1.1,0-2-0.9-2-2V5h10V13z"/>
+                    </svg>
+                  </button>
+                </label>
+              </div>
+            </div>
+            <div class="vehicle-picker-modal__actions"><button type="button" class="btn btn-sm btn-secondary vehicle-picker-modal__close-button">Cancel</button> <button type="button" class="btn btn-sm btn-primary" data-to-panel="form">Add A Loom</button></div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+    <!-- vehicle-picker-modal / end --><!-- photoswipe -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button><!--<button class="pswp__button pswp__button&#45;&#45;share" title="Share"></button>--> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+            <div class="pswp__share-tooltip"></div>
+          </div>
+          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- photoswipe / end --><!-- scripts --><script src="vendor/jquery/jquery.min.js"></script><script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script><script src="vendor/owl-carousel/owl.carousel.min.js"></script><script src="vendor/nouislider/nouislider.min.js"></script><script src="vendor/photoswipe/photoswipe.min.js"></script><script src="vendor/photoswipe/photoswipe-ui-default.min.js"></script><script src="vendor/select2/js/select2.min.js"></script><script src="js/number.js"></script><script src="js/main.js"></script>
+  </body>
+  
+</html>
